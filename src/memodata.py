@@ -1,4 +1,5 @@
 from datainterface import *
+from hlog import *
 
 class MemoData(DataInterface):
     def __init__(self, data="", name = "default"):

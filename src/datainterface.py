@@ -1,3 +1,5 @@
+from hlog import *
+
 class DataInterface:
     def __init__(self, data="", name = ""):
         self.Init(data, name)

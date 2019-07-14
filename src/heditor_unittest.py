@@ -12,8 +12,8 @@ class TestMemodata(unittest.TestCase):
         self.assertTrue(memo.OnGetData() == "")
 
     def test_configmanager(self):
-        cm = configmanager.ConfigManager()
-        configmanager.OnLoadConfig("heidtor.cfg")
+        cm = configmanager.ConfigManager.OnLoadConfig("test_heditor.cfg")
+        self.assertTrue(cm['screen']['mode'] == "vertical")
 
 if __name__ == '__main__':
     unittest.main()

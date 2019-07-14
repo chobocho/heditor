@@ -6,13 +6,15 @@ class ConfigManager:
     def __init__(self):
        ''' '''
 
-def OnLoadConfig(filename = ""):
-    Log.d("OnLoadConfig")
-    if len(filename) == 0:
-        return
-    
-    config = configparser.ConfigParser()
-    config.read(filename)
-    #if not hasattr(self, section):
-    #Log.d(config['screen']['mode'])
+    @staticmethod
+    def OnLoadConfig(filename = ""):
+        Log.d("OnLoadConfig")
+        if len(filename) == 0:
+            return
+        
+        config = configparser.ConfigParser()
+        config.read(filename)
+        return config
+        #if not hasattr(self, section):
+        #Log.d(config['screen']['mode'])
     
